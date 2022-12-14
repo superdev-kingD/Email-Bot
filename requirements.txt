@@ -1,0 +1,10 @@
+pyzmail36
+smtplib
+pandas
+imapclient
+
+# have to setup 2-step verification in your google account
+# setup app password in google account
+
+### please hire me in the other projects###
+### thank you.###
