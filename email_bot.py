@@ -47,10 +47,10 @@ with smtplib.SMTP(smtp_server, port) as server:
     server.ehlo()  # Can be omitted   
     server.login(username, password)
     
-    with open("emails.csv") as file:
+    with open("result.csv") as file:
             reader = csv.reader(file)
             next(reader)  # it skips the header row
-            for name, email in reader:
+            for email in reader:
                 msg['To'] = email
                 server.sendmail(sender, email, text)
                 
